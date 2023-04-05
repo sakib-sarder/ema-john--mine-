@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,10 +11,10 @@ const Header = () => {
           </a>
         </div>
         <div className="flex text-white gap-6">
-            <a href="#">Order </a>
-            <a href="#">Order Review</a>
-            <a href="#">Manage Inventory</a>
-            <a href="#"> Login</a>
+            <Link className="hover:text-orange-400 transition delay-100" to="/shop">Shop </Link>
+            <Link className="hover:text-orange-400 transition delay-100" to="/review">Orders</Link>
+            <Link className="hover:text-orange-400 transition delay-100" to="/inventory">Manage Inventory</Link>
+            <Link className="hover:text-orange-400 transition delay-100" to="/Login"> Login</Link>
         </div>
       </div>
     </div>
