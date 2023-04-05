@@ -1,7 +1,7 @@
 import React from "react";
 import { FaShoppingCart } from 'react-icons/fa';
 
-const Products = ({ product }) => {
+const Products = ({ product, handleAddToCart }) => {
   const { id, img, name, price, seller, ratings } = product;
   return (
     <div>
@@ -15,7 +15,7 @@ const Products = ({ product }) => {
             <p>Rating: {ratings}</p>
           </div>
         </div>
-        <button className="btn btn-error mt-auto flex gap-2"><span>Add To Cart</span> <FaShoppingCart className="text-lg"/></button>
+        <button onClick={()=>handleAddToCart(product)} className="btn btn-error mt-auto flex gap-2"><span>Add To Cart</span> <FaShoppingCart className="text-lg"/></button>
       </div>
     </div>
   );

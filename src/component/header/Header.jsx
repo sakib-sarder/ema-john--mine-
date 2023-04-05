@@ -12,7 +12,7 @@ const Header = () => {
         </div>
         <div className="flex text-white gap-6">
             <Link className="hover:text-orange-400 transition delay-100" to="/shop">Shop </Link>
-            <Link className="hover:text-orange-400 transition delay-100" to="/review">Orders</Link>
+            <Link className="hover:text-orange-400 transition delay-100" to="/orders">Orders</Link>
             <Link className="hover:text-orange-400 transition delay-100" to="/inventory">Manage Inventory</Link>
             <Link className="hover:text-orange-400 transition delay-100" to="/Login"> Login</Link>
         </div>
