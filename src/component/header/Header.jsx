@@ -6,9 +6,9 @@ const Header = () => {
     <div className="">
       <div className="navbar bg-primary px-5">
         <div className="flex-1">
-          <a className="btn btn-ghost normal-case text-xl">
+          <Link to='/' className="btn btn-ghost normal-case text-xl">
             <img src="../../../images/Logo.svg" alt="" />
-          </a>
+          </Link>
         </div>
         <div className="flex text-white gap-6">
             <Link className="hover:text-orange-400 transition delay-100" to="/shop">Shop </Link>

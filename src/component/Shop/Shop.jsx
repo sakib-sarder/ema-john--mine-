@@ -29,7 +29,7 @@ const Shop = () => {
       }
     }
     setCart(savedCart);
-  }, [data]);
+  }, [data ]);
 
   const handleAddToCart = (product) => {
     let newCart = [];
@@ -47,7 +47,7 @@ const Shop = () => {
   };
   return (
     <div className="flex mt-8 container mx-auto md:flex-row flex-col-reverse relative">
-      <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-2 w-3/4">
+      <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-2 w-full md:w-3/4">
         {data.map((product) => (
           <Products
             key={product.id}
@@ -56,7 +56,7 @@ const Shop = () => {
           ></Products>
         ))}
       </div>
-      <div className="cart-container w-1/4 px-4 mx-4 rounded-lg bg-orange-400 h-[100vh]  sticky top-0">
+      <div className="cart-container md:w-1/4 px-4 mx-4 rounded-lg bg-orange-400 h-[100vh]  sticky top-0">
         <SideBar cart={cart}>
           <Link className="bg-yellow-500 rounded-lg" to="/orders">
             <button className=" mx-auto rounded-md py-2 text-lg flex justify-center items-center gap-3">
